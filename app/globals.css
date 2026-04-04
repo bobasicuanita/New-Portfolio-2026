@@ -1,0 +1,47 @@
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "Nasalization";
+  src: url("/fonts/NasalizationRg.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --white-color: #FEFDFE;
+  --secondary-color: #737373;
+  --green-color: #00BB7D;
+  --gray-color: #4B5563;
+  --background-tile: #F3F4F6;
+  --green-color: #0f766e;
+  --green-glow: rgba(15, 118, 110, 0.15);
+}
+
+
+.dark {
+  --secondary-color: #B3B3B4;
+  --gray-color: #A9A8A9;
+  --bg-nav-color: #252527;
+  --green-color: #00bb7d;
+  --green-glow: rgba(0, 187, 125, 0.25);
+  --background-tile: #18191A;
+}
+
+html {
+  transition:
+    background-color 300s ease,
+    color 300ms ease;
+}
+
+* {
+  transition: background-color 300ms ease,
+    border-color 300ms ease,
+    color 300ms ease;
+}
+
+body {
+  color: white;
+  font-family: var(--font-outfit), system-ui;
+  scroll-behavior: smooth;
+}
