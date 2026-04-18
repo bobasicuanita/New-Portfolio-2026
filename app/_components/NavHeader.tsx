@@ -5,6 +5,7 @@ import { useState } from "react";
 import { CiMenuBurger } from "react-icons/ci";
 import useToggleTheme from "../_hooks/useToggleTheme";
 import { useRouter } from "next/navigation";
+import MobileMenu from "./MobileMenu";
 
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
@@ -135,6 +136,14 @@ export default function NavHeader() {
           </div>
         </div>
       </div>
+      <MobileMenu
+        open={menuOpen}
+        onClose={() => setMenuOpen(false)}
+        navLinks={navLinks}
+        handleNavClick={handleNavClick}
+        theme={theme}
+        toggleTheme={toggleTheme}
+      />
     </div>
   );
 }
