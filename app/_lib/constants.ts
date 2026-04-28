@@ -1,3 +1,6 @@
+import { FaReact, FaJs, FaNodeJs } from "react-icons/fa";
+import { SiRedux , SiTypescript, SiCss , SiTailwindcss, SiExpress, SiPostgresql, SiMongoose, SiMongodb, SiPostman, SiFramer, SiNextdotjs, SiReactquery, SiGraphql, SiTestinglibrary, SiVite, SiSass } from "react-icons/si";
+
 export const navLinks = ["home", "about", "experience", "skills", "projects", "contact me"];
 
 export const items = [
@@ -41,3 +44,49 @@ export const items = [
   technology: ["HTML5", "CSS", "Javascript", "Wordpress"]
 }
 ];
+
+export const feSkills = [
+  { name: "React", level: 95, icon: FaReact },
+  { name: "CSS3", level: 90, icon: SiCss },
+  { name: "TailwindCSS", level: 85, icon: SiTailwindcss },
+  { name: "TypeScript", level: 75, icon: SiTypescript },
+  { name: "JavaScript", level: 95, icon: FaJs },
+  { name: "Redux & Redux Toolkit", level: 80, icon: SiRedux  },
+]
+
+export const feSecondarySkills = [
+  { name: "Nextjs", icon: SiNextdotjs },
+  { name: "SCSS (Sass)", icon: SiSass },
+  { name: "React Query", icon: SiReactquery },
+  { name: "GraphQL", icon: SiGraphql },
+  { name: "React Testing Library",  icon: SiTestinglibrary },
+  { name: "Framer Motion", icon: SiFramer },
+  { name: "Vite", icon: SiVite },
+]
+
+export const beSkills = [
+  { name: "Node.js", level: 60, icon: FaNodeJs },
+  { name: "Express", level: 80, icon: SiExpress },
+  { name: "PostgreSQL", level: 60, icon: SiPostgresql },
+  { name: "Mongoose", level: 40, icon: SiMongoose },
+  { name: "MongoDB", level: 40, icon: SiMongodb },
+  { name: "Postman", level: 85, icon: SiPostman  },
+]
+
+export const methodologies = [
+  { name: "Responsive Web Design" },
+  { name: "Mobile-first Development Approach" },
+  { name: "Desktop-first Development Approach" },
+  { name: "Component-based Architecture Design" },
+  { name: "RESTful API Design" },
+  { name: "Agile Software Development" },
+  { name: "AI-assisted Development" },
+  { name: "UI/UX Design Principles" },
+  { name: "Application Performance Optimization" },
+  { name: "System Scalability Planning" },
+  { name: "CI / CD" },
+  { name: "Microservices Architecture" },
+  { name: "Design Systems Implementation" },
+  { name: "State Management Architecture" },
+  { name: "WCAG Accessibility (A11y) Best Practices" },
+]
