@@ -10,35 +10,10 @@ import ReactCountryFlag from "react-country-flag";
 import Image from "next/image";
 import Badge from "./Badge";
 import ScrollIndicator from "./ScrollIndicator";
-
-type Ripple = {
-  x: number;
-  y: number;
-  id: number;
-};
+import useHandleDownload from "../_hooks/useDownloadResume";
 
 export default function About() {
-  const [ripples, setRipples] = useState<Ripple[]>([]);
-  const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-
-    const size = 200;
-    const x = e.clientX - rect.left - size / 2;
-    const y = e.clientY - rect.top - size / 2;
-
-    const newRipple = {
-      x,
-      y,
-      id: Date.now(),
-    };
-
-    setRipples((prev) => [...prev, newRipple]);
-
-    setTimeout(() => {
-      setRipples((prev) => prev.filter((r) => r.id !== newRipple.id));
-    }, 600);
-  };
-
+  const { ripples, createRippleAndDownload } = useHandleDownload();
   return (
     <section
       id="about"
@@ -212,7 +187,7 @@ export default function About() {
                     Resume
                   </div>
                   <motion.button
-                    onClick={handleClick}
+                    onClick={createRippleAndDownload}
                     whileHover={{
                       y: -4,
                       scale: 1.03,

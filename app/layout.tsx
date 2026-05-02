@@ -34,7 +34,7 @@ export default function RootLayout({
         >
           <div className="fixed inset-0 pointer-events-none">
             <div className="absolute inset-0 bg-white/80 dark:bg-black" />
-            <div className="absolute inset-0 dark:bg-[url(/snow.svg)] bg-cover bg-center opacity-5" />
+            <div className="absolute inset-0 dark:bg-[url(/snow1.svg)] bg-cover bg-center opacity-5" />
             <div className="absolute inset-0 bg-white/80 dark:bg-black/80" />
             <div className="absolute inset-0 bg-[linear-gradient(rgba(0,0,0,0.05)_1px,transparent_1px),linear-gradient(90deg,rgba(0,0,0,0.05)_1px,transparent_1px)] dark:bg-[linear-gradient(rgba(255,255,255,0.03)_2px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_2px,transparent_1px)] bg-size-[100px_100px]" />
           </div>
