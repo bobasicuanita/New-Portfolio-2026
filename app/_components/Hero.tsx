@@ -5,9 +5,11 @@ import { motion } from "framer-motion";
 import { fadeStaggerContainer, fadeUpItem } from "../_utils/animations";
 import ScrollIndicator from "./ScrollIndicator";
 import useHandleDownload from "../_hooks/useDownloadResume";
+import useContact from "../_hooks/useContact";
 
 export default function Hero() {
   const { ripples, createRippleAndDownload } = useHandleDownload();
+  const { setIsContactModalOpen } = useContact();
   return (
     <section
       id="home"
@@ -104,6 +106,7 @@ export default function Hero() {
           className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-fit mt-4"
         >
           <button
+            onClick={() => setIsContactModalOpen(true)}
             className={`relative cursor-pointer py-4 sm:py-2 px-3 text-sm font-[Nasalization] sm:inline-flex rounded-3xl capitalize transition duration-200 text-(--white-color) bg-slate-500 dark:bg-[#3D3D40] dark:hover:text-cyan-500`}
           >
             <div className="absolute inset-0 bg-slate-500 dark:bg-[#3D3D40] rounded-3xl z-0" />

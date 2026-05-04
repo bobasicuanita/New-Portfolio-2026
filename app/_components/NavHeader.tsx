@@ -6,6 +6,8 @@ import { CiMenuBurger } from "react-icons/ci";
 import useToggleTheme from "../_hooks/useToggleTheme";
 import { useRouter } from "next/navigation";
 import MobileMenu from "./MobileMenu";
+import ContactModal from "./ContactModal";
+import useContact from "../_hooks/useContact";
 
 import { MdOutlineLightMode, MdOutlineDarkMode } from "react-icons/md";
 
@@ -14,6 +16,7 @@ export default function NavHeader() {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
   const router = useRouter();
   const { theme, toggleTheme } = useToggleTheme();
+  const { isContactModalOpen, setIsContactModalOpen } = useContact();
 
   const handleNavClick = (
     e: React.MouseEvent<HTMLAnchorElement>,
@@ -32,6 +35,7 @@ export default function NavHeader() {
     }
 
     if (id === "contact me") {
+      setIsContactModalOpen(true);
       return;
     }
     setSelected(id);
@@ -143,6 +147,10 @@ export default function NavHeader() {
         handleNavClick={handleNavClick}
         theme={theme}
         toggleTheme={toggleTheme}
+      />
+      <ContactModal
+        open={isContactModalOpen}
+        onClose={() => setIsContactModalOpen(false)}
       />
     </div>
   );
