@@ -12,6 +12,9 @@ export const metadata: Metadata = {
   title: "Konstantinos Karasavvas",
   description:
     "Frontend Software Engineer portfolio by Konstantinos Karasavvas",
+  icons: {
+    icon: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
