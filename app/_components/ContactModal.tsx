@@ -5,6 +5,10 @@ import { AnimatePresence, motion } from "framer-motion";
 import { createPortal } from "react-dom";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
+const SERVICE_ID = "service_wp29mqj";
+const TEMPLATE_ID = "template_f4byy47";
+const PUBLIC_KEY = "FMOyX2fFXGCGFf9-u";
+
 export default function ContactModal({
   open,
   onClose,
@@ -25,7 +29,9 @@ export default function ContactModal({
     }
   }, [status]);
 
-  if (typeof window === "undefined") return null;
+  const portalRoot = typeof window !== "undefined" ? document.body : null;
+
+  if (!portalRoot) return null;
 
   const isValidEmail = (email: string) =>
     /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
@@ -39,12 +45,7 @@ export default function ContactModal({
     setStatus("idle");
 
     emailjs
-      .sendForm(
-        "service_wp29mqj",
-        "template_f4byy47",
-        formRef.current!,
-        "FMOyX2fFXGCGFf9-u",
-      )
+      .sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current!, PUBLIC_KEY)
       .then(() => {
         setLoading(false);
         setStatus("success");
