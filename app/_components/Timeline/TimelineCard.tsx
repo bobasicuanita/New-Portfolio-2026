@@ -8,7 +8,7 @@ type TimelineCardProps = {
 export default function TimelineCard({ item }: TimelineCardProps) {
   return (
     <div className="bg-(--background-tile) cursor-default text-left rounded-2xl p-6 shadow-lg transition-all duration-300 border border-gray-200 dark:border-white/5 shadow-[inset 0 1px 0 rgba(255,255,255,0.03),0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]">
-      <p className="text-center sm:text-left text-xs text-blue-600 dark:text-cyan-500 uppercase tracking-widest mb-2">
+      <p className="hidden md:block text-center sm:text-left text-xs text-blue-600 dark:text-cyan-500 uppercase tracking-widest mb-2">
         {item.year}
       </p>
       <h3 className="text-center sm:text-left text-lg font-semibold text-(--gray-color) dark:text-(--white-color)">
