@@ -31,17 +31,17 @@ export default function Skills() {
             <motion.div variants={fadeUpItem} className="w-full">
               <div className="w-full rounded-4xl p-8 bg-(--background-tile) border border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]">
                 <div>
-                  <h2 className="text-xl text-black dark:text-(--white-color)">
+                  <h2 className="text-center sm:text-left text-xl text-black dark:text-(--white-color)">
                     Technical Proficiency
                   </h2>
-                  <p className="text-(--gray-color) text-sm mt-1">
+                  <p className="text-center sm:text-left text-(--gray-color) text-sm mt-1">
                     What began as curiosity turned into a career—I’m a
                     self-taught software engineer who learned the craft through
                     courses and real-world experience.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <div className="w-full md:w-1/2">
-                      <h3 className="uppercase tracking-widest text-black dark:text-(--white-color)">
+                      <h3 className="text-center sm:text-left uppercase tracking-widest text-black dark:text-(--white-color)">
                         Frontend
                       </h3>
                       <ul className="flex flex-col gap-4 mt-4">
@@ -59,7 +59,7 @@ export default function Skills() {
                       </ul>
                     </div>
                     <div className="w-full md:w-1/2">
-                      <h3 className="uppercase tracking-widest text-black dark:text-(--white-color)">
+                      <h3 className="text-center sm:text-left uppercase tracking-widest text-black dark:text-(--white-color)">
                         Backend
                       </h3>
                       <ul className="flex flex-col gap-4 mt-4">
@@ -101,10 +101,10 @@ export default function Skills() {
             <motion.div variants={fadeUpItem} className="w-full">
               <div className="w-full rounded-4xl p-8 bg-(--background-tile) border border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]">
                 <div>
-                  <h2 className="text-xl text-black dark:text-(--white-color)">
+                  <h2 className="text-center sm:text-left text-xl text-black dark:text-(--white-color)">
                     Methodologies & Approaches
                   </h2>
-                  <p className="text-(--gray-color) text-sm mt-1">
+                  <p className="text-center sm:text-left text-(--gray-color) text-sm mt-1">
                     A set of engineering principles I apply to ensure systems
                     remain scalable, maintainable, and user-focused as they
                     evolve.

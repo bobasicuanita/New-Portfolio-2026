@@ -43,8 +43,8 @@ export default function About() {
                 quality={100}
                 className="object-cover"
               />
-              <div className="absolute z-10 bottom-4 left-8">
-                <motion.div className="relative overflow-hidden rounded-full bg-[#00BB7D]/10 border border-[#00BB7D] text-[#00BB7D] w-fit mx-auto px-4 py-1 flex items-center mb-4 gap-2">
+              <div className="absolute z-10 bottom-4 w-full sm:left-8">
+                <motion.div className="relative overflow-hidden rounded-full bg-[#00BB7D]/10 border border-[#00BB7D] text-[#00BB7D] w-fit mx-auto sm:mx-0 px-4 py-1 flex mb-4 gap-2">
                   <motion.div
                     className="absolute inset-0"
                     animate={{ x: ["-120%", "120%"] }}
@@ -64,7 +64,7 @@ export default function About() {
                     Open to opportunities
                   </div>
                 </motion.div>
-                <div className="flex flex-row items-center gap-2 text-left">
+                <div className="flex flex-row justify-center sm:justify-start items-center gap-2 text-left">
                   <IoLocationOutline />
                   <span className="font-light tracking-wider">
                     Thessaloniki, Greece
@@ -74,7 +74,7 @@ export default function About() {
             </div>
             <div className="w-full lg:w-2/3 rounded-4xl p-8 bg-(--background-tile) border border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]">
               <div className="text-left text-(--gray-color) dark:text-(--white-color) text-sm font-light dark:font-thin">
-                <p className="pb-4">
+                <p className="text-center sm:text-left pb-4">
                   <span className="font-semibold text-black dark:text-(--white-color)">
                     Frontend engineer
                   </span>{" "}
@@ -86,18 +86,18 @@ export default function About() {
                   , clean architecture, and systems that don’t break as they
                   grow.
                 </p>
-                <p className="pb-4">
+                <p className="text-center sm:text-left pb-4">
                   I’ve modernized legacy codebases, raised code quality
                   standards, and shipped impactful features, including AI-driven
                   ones. I take ownership, move things forward, and care about
                   delivering work that’s both fast and built to last.
                 </p>
-                <p>
+                <p className="text-center sm:text-left">
                   No shortcuts. No unnecessary complexity. Just solid
                   engineering and real impact.
                 </p>
               </div>
-              <div className="flex flex-row items-center gap-2 text-left mt-4">
+              <div className="flex flex-row justify-center sm:justify-start items-center gap-2 text-left mt-4">
                 <div className="flex gap-2 items-center">
                   <Badge>
                     <ReactCountryFlag
@@ -105,7 +105,7 @@ export default function About() {
                       svg
                       className="w-4 h-4 rounded-sm"
                     />
-                    <span className="text-sm text-black dark:text-white">
+                    <span className="text-xs sm:text-sm text-black dark:text-white">
                       Greek{" "}
                       <span className="text-(--gray-color) dark:text-white/50 font-light">
                         (Native)
@@ -119,7 +119,7 @@ export default function About() {
                       svg
                       className="w-4 h-4 rounded-sm"
                     />
-                    <span className="text-sm text-black dark:text-white">
+                    <span className="text-xs sm:text-sm text-black dark:text-white">
                       English{" "}
                       <span className="text-(--gray-color) dark:text-white/50 font-light">
                         (C2)
@@ -240,13 +240,13 @@ export default function About() {
               className="w-full lg:w-1/3 rounded-4xl flex flex-col gap-4 px-8 py-6 bg-(--background-tile) border text-left border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),
 0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]"
             >
-              <h3 className="uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
+              <h3 className="text-center sm:text-left uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
                 Current Role
               </h3>
-              <p className="font-semibold tracking-wide text-black dark:text-(--white-color)">
+              <p className="text-center sm:text-left font-semibold tracking-wide text-black dark:text-(--white-color)">
                 Frontend Software Engineer
               </p>
-              <p className="text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
+              <p className=" text-center sm:text-lefttext-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
                 Crafting user interfaces for Transifex by XTM
               </p>
             </div>
@@ -254,13 +254,13 @@ export default function About() {
               className="w-full lg:w-1/3 rounded-4xl flex flex-col gap-4 px-8 py-6 bg-(--background-tile) border text-left border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),
 0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]"
             >
-              <h3 className="uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
+              <h3 className="text-center sm:text-left uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
                 Core Stack
               </h3>
-              <p className="font-semibold tracking-wide text-black dark:text-(--white-color)">
+              <p className="text-center sm:text-left font-semibold tracking-wide text-black dark:text-(--white-color)">
                 React, Next.js, Javascript, Typescript
               </p>
-              <p className="text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
+              <p className="text-center sm:text-left text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
                 Frontend interfaces for SaaS Applications
               </p>
             </div>
@@ -268,13 +268,13 @@ export default function About() {
               className="w-full lg:w-1/3 rounded-4xl flex flex-col gap-4 px-8 py-6 bg-(--background-tile) border text-left border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),
 0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]"
             >
-              <h3 className="uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
+              <h3 className="text-center sm:text-left uppercase text-xs tracking-widest text-blue-600 dark:text-cyan-500">
                 Education
               </h3>
-              <p className="font-semibold tracking-wide text-black dark:text-(--white-color)">
+              <p className="text-center sm:text-left font-semibold tracking-wide text-black dark:text-(--white-color)">
                 International Hellenic University - IHU, Serres
               </p>
-              <p className="text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
+              <p className="text-center sm:text-left text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
                 BA in Civil Engineering,
               </p>
             </div>

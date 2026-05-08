@@ -17,7 +17,7 @@ export default function Footer() {
             _
           </span>
         </h3>
-        <p className="uppercase tracking-widest font-extralight text-sm lg:text-md text-blue-600 dark:text-cyan-500">
+        <p className="uppercase tracking-widest font-light text-sm lg:text-md text-blue-600 dark:text-cyan-500">
           Frontend Software Engineer
         </p>
         <div className="text-sm text-(--gray-color) flex items-center gap-1">
