@@ -15,6 +15,7 @@ export const items = [
       "Developed UI components for AI-driven features, contributing to new product capabilities.",
       "Implemented onboarding flows in React, improving user experience and feature adoption.",
       "Supported a junior developer through ad-hoc guidance and code reviews.",
+      "ACHIEVEMENT: Received Growth Award for contributions to frontend development and continuous improvement"
     ],
     technology: ["HTML5", "CSS", "LESS", "Javascript", "React", "NextJS", "TailwindCSS", "Redux", "MarionetteJS", "BackboneJS", "Jquery", "GraphQL", "Cursor", "Claude", "React Query", "Django", "Docker"]
   },
