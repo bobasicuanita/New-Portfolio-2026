@@ -82,14 +82,16 @@ export default function NavHeader() {
           const isActive = selected === link;
 
           return (
-            <a
+            <motion.a
+              whileHover={!isActive && !isContact ? { scale: 1.05 } : {}}
+              transition={{ duration: 0.1 }}
               key={link}
               href={`#${link}`}
               onClick={(e) => handleNavClick(e, link)}
-              className={`relative py-2 px-3 text-xs font-[Nasalization] inline-flex rounded-3xl capitalize transition duration-200 ${
+              className={`group relative py-2 px-3 text-xs font-[Nasalization] inline-flex rounded-3xl capitalize transition duration-200 ${
                 isContact
                   ? "text-(--white-color) dark:text-(--white-color) dark:bg-[#3D3D40] hover:text-blue-600 dark:hover:text-cyan-500"
-                  : `${isActive ? "text-(--white-color)" : "text-(--gray-color)"}  dark:text-(--white-color) hover:scale-105`
+                  : `${isActive ? "text-(--white-color)" : "text-(--gray-color)"}  dark:text-(--white-color)`
               }`}
             >
               {!isContact && isActive && (
@@ -117,8 +119,16 @@ export default function NavHeader() {
                   <div className="absolute inset-0 rounded-3xl pointer-events-none z-10 [background:radial-gradient(ellipse_at_top,rgba(255,255,255,0.5),transparent_40%)] blur-sm" />
                 </>
               )}
-              <span className="relative z-10 capitalize">{link}</span>
-            </a>
+              <span
+                className={`relative z-20 capitalize transition-colors ${
+                  isContact || isActive
+                    ? "group-hover:text-blue-600 dark:group-hover:text-cyan-500"
+                    : ""
+                }`}
+              >
+                {link}
+              </span>
+            </motion.a>
           );
         })}
       </nav>
