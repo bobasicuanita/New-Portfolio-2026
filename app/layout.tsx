@@ -8,6 +8,12 @@ const outfit = Outfit({
   variable: "--font-outfit",
 });
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
+
 export const metadata: Metadata = {
   title: "Konstantinos Karasavvas",
   description:
@@ -28,7 +34,7 @@ export default function RootLayout({
       suppressHydrationWarning
       className={`h-full ${outfit.variable}`}
     >
-      <body className="min-h-screen pt-[80px] relative overflow-x-hidden font-outfit">
+      <body className="min-h-dvh pt-[80px] relative overflow-x-hidden font-outfit">
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"

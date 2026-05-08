@@ -8,7 +8,7 @@ export default function Footer() {
       id="footer"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="w-full  p-12"
+      className="pb-safe w-full p-12"
     >
       <div className="flex flex-col justify-center items-center gap-2 text-black dark:text-(--white-color)">
         <h3 className="font-[nasalization] text-(--gray-color) text-lg lg:text-xl">

@@ -1,6 +1,12 @@
 @import 'tailwindcss';
 @custom-variant dark (&:where(.dark, .dark *));
 
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
 @font-face {
   font-family: "Nasalization";
   src: url("/fonts/NasalizationRg.otf") format("opentype");

@@ -17,7 +17,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-screen flex justify-center text-center -translate-y-30 relative py-24 px-8 lg:py-30 lg:px-30"
+      className="min-h-dvh flex justify-center text-center -translate-y-30 relative py-24 px-8 lg:py-30 lg:px-30"
     >
       <div>
         <h6 className="text-center md:text-left font-thin w-full text-sm text-(--gray-color) font-[nasalization] mb-16">
@@ -134,7 +134,7 @@ export default function About() {
                   <span className="text-4xl text-black dark:text-(--white-color) font-bold">
                     5+
                   </span>
-                  <span className="text-(--gray-color) font-light tracking-widest uppercase">
+                  <span className="text-xs sm:text-lg text-(--gray-color) font-light tracking-widest uppercase">
                     years exp
                   </span>
                 </div>
@@ -142,7 +142,7 @@ export default function About() {
                   <span className="text-4xl text-black dark:text-(--white-color) font-bold">
                     20+
                   </span>
-                  <span className="text-(--gray-color) font-light tracking-widest uppercase">
+                  <span className="text-xs sm:text-lg text-(--gray-color) font-light tracking-widest uppercase">
                     Projects
                   </span>
                 </div>
@@ -150,7 +150,7 @@ export default function About() {
                   <span className="text-4xl text-black dark:text-(--white-color) font-bold">
                     10+
                   </span>
-                  <span className="text-(--gray-color) font-light tracking-widest uppercase">
+                  <span className="text-xs sm:text-lg text-(--gray-color) font-light tracking-widest uppercase">
                     Courses
                   </span>
                 </div>

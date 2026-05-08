@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center justify-center text-center -translate-y-30 px-6 relative"
+      className="min-h-dvh flex items-center justify-center text-center -translate-y-30 px-6 relative"
     >
       <div className="relative z-10 w-full md:w-[70%] lg:w-[80%] xl:w-[90%] flex flex-col items-center gap-4 cursor-default">
         <motion.div
@@ -68,7 +68,7 @@ export default function Hero() {
         >
           <motion.p
             variants={fadeUpItem}
-            className="mt-4 text-[10px] sm:text-[12px] md:text-xs lg:text-lg font-roboto font-light text-(--secondary-color) uppercase mb-4 tracking-widest"
+            className="mt-4 text-[12px] md:text-xs lg:text-lg font-roboto font-light text-(--secondary-color) uppercase mb-4 tracking-widest"
           >
             Frontend-focused engineer with experience building fullstack
             applications.
