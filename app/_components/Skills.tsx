@@ -39,7 +39,7 @@ export default function Skills() {
                     self-taught software engineer who learned the craft through
                     courses and real-world experience.
                   </p>
-                  <div className="flex gap-4 mt-8">
+                  <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <div className="w-full md:w-1/2">
                       <h3 className="uppercase tracking-widest text-black dark:text-(--white-color)">
                         Frontend
@@ -131,7 +131,6 @@ export default function Skills() {
                           whileHover={{ opacity: 1 }}
                           transition={{ duration: 0.3 }}
                         />
-
                         <p className="relative text-sm leading-relaxed text-center">
                           {m.name}
                         </p>

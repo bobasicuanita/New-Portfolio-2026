@@ -9,10 +9,10 @@ export default function Projects() {
           004 | Projects
         </h6>
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-xl text-blue-600 dark:text-cyan-500">
+          <h1 className="text-center text-xl text-blue-600 dark:text-cyan-500">
             Awesome projects coming soon...
           </h1>
-          <p className="text-xs text-(--gray-color) dark:text-(--white-color)">
+          <p className="text-center text-xs text-(--gray-color) dark:text-(--white-color)">
             You can check some educational and WIP projects on{" "}
             <a
               className="underline"
