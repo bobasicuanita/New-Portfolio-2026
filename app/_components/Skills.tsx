@@ -36,8 +36,8 @@ export default function Skills() {
                   </h2>
                   <p className="text-center sm:text-left text-(--gray-color) text-sm mt-1">
                     What began as curiosity turned into a career—I’m a
-                    self-taught software engineer who learned the craft through
-                    courses and real-world experience.
+                    self-directed software engineer who learned the craft
+                    through courses and real-world experience.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-4 mt-8">
                     <div className="w-full md:w-1/2">
