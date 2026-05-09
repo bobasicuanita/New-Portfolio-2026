@@ -236,7 +236,7 @@ export default function About() {
               <p className="text-center sm:text-left font-semibold tracking-wide text-black dark:text-(--white-color)">
                 Frontend Software Engineer
               </p>
-              <p className=" text-center sm:text-lefttext-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
+              <p className=" text-center sm:text-left text-sm font-light text-(--gray-color) dark:font-thin dark:text-(--white-color)">
                 Crafting user interfaces for Transifex by XTM
               </p>
             </div>
