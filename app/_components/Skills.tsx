@@ -19,7 +19,7 @@ export default function Skills() {
     >
       <div>
         <h6 className="text-center md:text-left font-thin w-full text-sm text-(--gray-color) font-[nasalization] mb-16">
-          003 | SKILLS
+          002 | SKILLS
         </h6>
         <motion.div
           variants={fadeStaggerContainer}
