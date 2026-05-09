@@ -1,5 +1,4 @@
 "use client";
-import { useState } from "react";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
@@ -10,10 +9,9 @@ import ReactCountryFlag from "react-country-flag";
 import Image from "next/image";
 import Badge from "./Badge";
 import ScrollIndicator from "./ScrollIndicator";
-import useHandleDownload from "../_hooks/useDownloadResume";
+import { download } from "../_utils/download";
 
 export default function About() {
-  const { ripples, createRippleAndDownload } = useHandleDownload();
   return (
     <section
       id="about"
@@ -36,12 +34,20 @@ export default function About() {
             <div className=" w-full lg:h-auto lg:w-1/3 aspect-square relative overflow-hidden rounded-4xl border border-gray-200 dark:border-white/5 shadow-lg shadow-[inset 0 1px 0 rgba(255,255,255,0.03),0 0 0 1px rgba(0,0,0,0.4)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.03),0_0_0_1px_rgba(0,0,0,0.4)]">
               <div className="absolute z-10 inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0)_0%,rgba(0,0,0,0)_50%,rgba(0,0,0,0.85)_100%)]" />
               <Image
-                src="/me.png"
+                src="/meai-light.jpg"
                 alt="Profile"
                 fill
                 sizes="(max-width: 768px) 100vw, 33vw"
                 quality={100}
-                className="object-cover"
+                className="object-cover block dark:hidden"
+              />
+              <Image
+                src="/meai-dark.jpg"
+                alt="Profile"
+                fill
+                sizes="(max-width: 768px) 100vw, 33vw"
+                quality={100}
+                className="object-cover hidden dark:block"
               />
               <div className="absolute z-10 bottom-4 w-full sm:left-8">
                 <motion.div className="relative overflow-hidden rounded-full bg-[#00BB7D]/10 border border-[#00BB7D] text-[#00BB7D] w-fit mx-auto sm:mx-0 px-4 py-1 flex mb-4 gap-2">
@@ -187,7 +193,7 @@ export default function About() {
                     Resume
                   </div>
                   <motion.button
-                    onClick={createRippleAndDownload}
+                    onClick={download}
                     whileHover={{
                       y: -4,
                       scale: 1.03,
@@ -202,22 +208,6 @@ export default function About() {
                     }}
                     className="relative overflow-hidden py-4 sm:py-2 px-3 rounded-3xl uppercase font-[Nasalization] font-bold bg-blue-600 dark:bg-cyan-500 text-sm cursor-pointer flex justify-center items-center text-white"
                   >
-                    {ripples.map((ripple) => (
-                      <motion.span
-                        key={ripple.id}
-                        initial={{ scale: 0, opacity: 0.5 }}
-                        animate={{ scale: 4, opacity: 0 }}
-                        transition={{ duration: 0.6, ease: "easeOut" }}
-                        className="absolute rounded-full bg-white/40 pointer-events-none"
-                        style={{
-                          width: 200,
-                          height: 200,
-                          top: ripple.y,
-                          left: ripple.x,
-                        }}
-                      />
-                    ))}
-
                     <GoDownload size={16} />
                     <div className="ml-1">Get my Resume</div>
                   </motion.button>

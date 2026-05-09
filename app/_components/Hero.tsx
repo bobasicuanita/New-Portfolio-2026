@@ -4,11 +4,10 @@ import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
 import { fadeStaggerContainer, fadeUpItem } from "../_utils/animations";
 import ScrollIndicator from "./ScrollIndicator";
-import useHandleDownload from "../_hooks/useDownloadResume";
 import useContact from "../_hooks/useContact";
+import { download } from "../_utils/download";
 
 export default function Hero() {
-  const { ripples, createRippleAndDownload } = useHandleDownload();
   const { setIsContactModalOpen } = useContact();
   return (
     <section
@@ -116,7 +115,7 @@ export default function Hero() {
             </span>
           </button>
           <motion.button
-            onClick={createRippleAndDownload}
+            onClick={download}
             whileHover={{
               y: -4,
               scale: 1.03,
@@ -131,22 +130,6 @@ export default function Hero() {
             }}
             className="relative overflow-hidden py-4 sm:py-2 px-3 rounded-3xl uppercase font-[Nasalization] font-bold bg-blue-600 dark:bg-cyan-500 text-sm cursor-pointer flex justify-center items-center text-white"
           >
-            {ripples.map((ripple) => (
-              <motion.span
-                key={ripple.id}
-                initial={{ scale: 0, opacity: 0.5 }}
-                animate={{ scale: 4, opacity: 0 }}
-                transition={{ duration: 0.6, ease: "easeOut" }}
-                className="absolute rounded-full bg-white/40 pointer-events-none"
-                style={{
-                  width: 200,
-                  height: 200,
-                  top: ripple.y,
-                  left: ripple.x,
-                }}
-              />
-            ))}
-
             <GoDownload size={16} />
             <div className="ml-1">Get my Resume</div>
           </motion.button>
