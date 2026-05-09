@@ -55,7 +55,7 @@ export default function Hero() {
             }}
           />
 
-          <div className="relative z-10 flex items-center text-xs sm:text-md gap-2">
+          <div className="relative z-10 flex items-center text-xs sm:text-sm gap-2">
             <div className="w-2 h-2 rounded-full bg-(--green-color)" />
             Open to opportunities
           </div>
