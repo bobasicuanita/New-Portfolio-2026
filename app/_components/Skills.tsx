@@ -15,7 +15,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="min-h-dvh w-full relative py-24 px-8 lg:py-30 lg:px-30"
+      className="min-h-dvh w-full relative py-24 px-4 sm:px-8 lg:py-30 lg:px-30 mb-16 sm:mb-0"
     >
       <div>
         <h6 className="text-center md:text-left font-thin w-full text-sm text-(--gray-color) font-[nasalization] mb-16">

@@ -1,7 +1,7 @@
 import { FaReact, FaJs, FaNodeJs } from "react-icons/fa";
 import { SiRedux , SiTypescript, SiCss , SiTailwindcss, SiExpress, SiPostgresql, SiMongoose, SiMongodb, SiPostman, SiFramer, SiNextdotjs, SiReactquery, SiGraphql, SiTestinglibrary, SiVite, SiSass } from "react-icons/si";
 
-export const navLinks = ["home", "about", "experience", "skills", "projects", "contact me"];
+export const navLinks = ["home", "about", "skills", "experience", "projects", "contact me"];
 
 export const items = [
   {

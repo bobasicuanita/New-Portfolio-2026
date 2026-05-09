@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-dvh flex items-center justify-center text-center -translate-y-30 px-6 relative"
+      className="min-h-dvh flex items-center justify-center text-center -translate-y-30 px-4 sm:px-8 relative"
     >
       <div className="relative z-10 w-full md:w-[70%] lg:w-[80%] xl:w-[90%] flex flex-col items-center gap-4 cursor-default">
         <motion.div
@@ -23,7 +23,7 @@ export default function Hero() {
             duration: 0.4,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
           }}
-          className="relative overflow-hidden rounded-full bg-[#00BB7D]/10 border border-(--green-color) text-(--green-color) w-fit mx-auto px-4 py-1.5 flex items-center mb-2 gap-2"
+          className="mt-8 relative overflow-hidden rounded-full bg-[#00BB7D]/10 border border-(--green-color) text-(--green-color) w-fit mx-auto px-4 py-1.5 flex items-center sm:mb-2 gap-2"
         >
           <motion.div
             className="absolute inset-0 shimmer-light"
@@ -55,7 +55,7 @@ export default function Hero() {
             }}
           />
 
-          <div className="relative z-10 flex items-center gap-2">
+          <div className="relative z-10 flex items-center text-xs sm:text-md gap-2">
             <div className="w-2 h-2 rounded-full bg-(--green-color)" />
             Open to opportunities
           </div>
@@ -102,17 +102,15 @@ export default function Hero() {
             duration: 0.4,
             scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
           }}
-          className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-fit mt-4"
+          className="flex flex-col sm:flex-row justify-center gap-4 w-full sm:w-fit sm:mt-4"
         >
           <button
             onClick={() => setIsContactModalOpen(true)}
-            className={`relative cursor-pointer py-4 sm:py-2 px-3 text-sm font-[Nasalization] sm:inline-flex rounded-3xl capitalize transition duration-200 text-(--white-color) bg-slate-500 dark:bg-[#3D3D40] dark:hover:text-cyan-500`}
+            className={`relative cursor-pointer py-3 sm:py-2 px-3 text-sm font-[Nasalization] sm:inline-flex rounded-3xl capitalize transition duration-200 text-(--white-color) bg-slate-500 dark:bg-[#3D3D40] dark:hover:text-cyan-500`}
           >
             <div className="absolute inset-0 bg-slate-500 dark:bg-[#3D3D40] rounded-3xl z-0" />
             <div className="absolute inset-0 rounded-3xl pointer-events-none z-10 [background:radial-gradient(ellipse_at_top,rgba(255,255,255,0.5),transparent_40%)] blur-sm" />
-            <span className="relative z-10 text-md uppercase">
-              Let&apos;s Connect
-            </span>
+            <span className="relative z-10 uppercase">Let&apos;s Connect</span>
           </button>
           <motion.button
             onClick={download}
@@ -128,7 +126,7 @@ export default function Hero() {
               duration: 0.3,
               ease: "easeOut",
             }}
-            className="relative overflow-hidden py-4 sm:py-2 px-3 rounded-3xl uppercase font-[Nasalization] font-bold bg-blue-600 dark:bg-cyan-500 text-sm cursor-pointer flex justify-center items-center text-white"
+            className="relative overflow-hidden py-3 sm:py-2 px-3 rounded-3xl uppercase font-[Nasalization] font-bold bg-blue-600 dark:bg-cyan-500 text-sm cursor-pointer flex justify-center items-center text-white"
           >
             <GoDownload size={16} />
             <div className="ml-1">Get my Resume</div>

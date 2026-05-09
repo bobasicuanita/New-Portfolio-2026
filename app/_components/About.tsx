@@ -15,7 +15,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="min-h-dvh flex justify-center text-center -translate-y-30 relative py-24 px-8 lg:py-30 lg:px-30"
+      className="min-h-dvh flex justify-center text-center -translate-y-30 relative py-24 px-4 sm:px-8 lg:py-30 lg:px-30"
     >
       <div>
         <h6 className="text-center md:text-left font-thin w-full text-sm text-(--gray-color) font-[nasalization] mb-16">
