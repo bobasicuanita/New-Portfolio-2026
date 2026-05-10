@@ -39,6 +39,7 @@ html {
   transition:
     background-color 300s ease,
     color 300ms ease;
+  overscroll-behavior: none;
 }
 
 * {
@@ -51,6 +52,7 @@ body {
   color: white;
   font-family: var(--font-outfit), system-ui;
   scroll-behavior: smooth;
+  overscroll-behavior: none;
 }
 
 .dark .shimmer-light {

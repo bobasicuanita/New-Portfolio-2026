@@ -19,7 +19,8 @@ export const metadata: Metadata = {
   description:
     "Frontend Software Engineer portfolio by Konstantinos Karasavvas",
   icons: {
-    icon: "/icon.svg",
+    icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
