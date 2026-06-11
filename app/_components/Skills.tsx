@@ -9,7 +9,6 @@ import {
   methodologies,
 } from "../_lib/constants";
 import Badge from "./Badge";
-import ScrollIndicator from "./ScrollIndicator";
 
 export default function Skills() {
   return (
@@ -143,7 +142,6 @@ export default function Skills() {
           </div>
         </motion.div>
       </div>
-      <ScrollIndicator />
     </section>
   );
 }

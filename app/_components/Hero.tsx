@@ -12,7 +12,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-dvh flex items-center justify-center text-center -translate-y-30 px-4 sm:px-8 relative"
+      className="min-h-dvh flex items-center justify-center text-center px-4 sm:px-8 relative"
     >
       <div className="relative z-10 w-full md:w-[70%] lg:w-[80%] xl:w-[90%] flex flex-col items-center gap-4 cursor-default">
         <motion.div

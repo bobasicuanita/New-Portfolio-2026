@@ -8,14 +8,13 @@ import { fadeStaggerContainer, fadeUpItem } from "../_utils/animations";
 import ReactCountryFlag from "react-country-flag";
 import Image from "next/image";
 import Badge from "./Badge";
-import ScrollIndicator from "./ScrollIndicator";
 import { download } from "../_utils/download";
 
 export default function About() {
   return (
     <section
       id="about"
-      className="min-h-dvh flex justify-center text-center -translate-y-30 relative py-24 px-4 sm:px-8 lg:py-30 lg:px-30"
+      className="min-h-dvh flex justify-center text-center relative py-24 px-4 sm:px-8 lg:py-30 lg:px-30"
     >
       <div>
         <h6 className="text-center md:text-left font-thin w-full text-sm text-(--gray-color) font-[nasalization] mb-16">
@@ -271,7 +270,6 @@ export default function About() {
           </motion.div>
         </motion.div>
       </div>
-      <ScrollIndicator />
     </section>
   );
 }

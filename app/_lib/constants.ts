@@ -91,3 +91,28 @@ export const methodologies = [
   { name: "State Management Architecture" },
   { name: "WCAG Accessibility (A11y) Best Practices" },
 ]
+
+export const frontendFlowFeatures = [
+  "Guides users toward frontend development and UI generation workflows through a focused AI chat experience.",
+  "Generates React components and frontend code from natural language prompts.",
+  "Streams AI responses in real time for a smooth conversational experience.",
+  "Renders live previews of generated components alongside the source code.",
+  "Maintains conversation context and chat history throughout the session.",
+  "Built with the Vercel AI SDK to explore modern AI application patterns and developer-focused tooling."
+]
+
+export const frontendFlowTech = [
+  "React",
+  "Typescript",
+  "Next.js",
+  "TailwindCSS",
+  "AI SDK by Vercel",
+  "Sandpack",
+  "Shiki",
+  "framer-motion",
+  "React-spinners",
+  "React-markdown",
+  "React-Scrollbars2",
+  "zod",
+  "lucide-react"
+]
